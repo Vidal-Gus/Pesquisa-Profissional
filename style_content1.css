@@ -1,0 +1,93 @@
+fieldset{
+    border: none;
+}
+main h1{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    display: block;
+}
+
+.section-base{
+    display: flex;
+    justify-content: space-around;;
+    margin-bottom: 47px;
+}
+
+.section-base div{
+    display: flex;
+    flex-direction: column;
+}
+
+form .section-base input{
+    width: 300px;
+    height: 25px;
+    margin-bottom: 36px;
+    border: none;
+}
+
+form input, textarea{
+    text-align: center;
+    color: black;
+    background: #FFFF;
+    border-radius: 10px;
+}
+
+
+/* FORM BOTTOM*/
+
+h3{
+    color: #60D5F5;
+}
+
+.avisos{
+    margin-top: -15px;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    align-content: center;
+    background-color: #a8863179;
+}
+.avisos:hover{
+    transition: .5s;
+    background-color: #A88731;
+}
+.section-bottom{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.section-bottom div{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-avisos{
+    margin-top: -23px;
+}
+.section-bottom .botoes{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.botao{
+    width: 67px;
+    height: 37px;
+    background-color: #479DB5;
+    color: #FFFF;
+    background: #479DB5;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+
+}
+
+.botao:hover{
+    transition: .5s;
+    background-color: #60D5F5;
+    cursor: pointer;
+}
