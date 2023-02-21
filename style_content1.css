@@ -99,3 +99,45 @@ h3{
 .form-pg2{
     width: 450px;
 }
+
+.div-section-base{
+    height: 350px;
+}
+.div-section-base textarea{
+margin-bottom: 15px;
+}
+
+.div-section-base input[type="range"]{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    margin: 10px;
+}
+.div-section-base input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #479DB5;
+  cursor: pointer;
+}
+
+.div-section-base div input[type="radio"]{
+    width: 20px;
+    margin-bottom: 1px;
+}
+
+.div-section-base div{
+    align-items: center;
+    flex-direction: row;
+}
+
+#input-text-mudaProf{
+    flex-direction: column;
+    margin: auto;
+}
+
+#input-text-mudaProf input{
+    width: 220px;
+}

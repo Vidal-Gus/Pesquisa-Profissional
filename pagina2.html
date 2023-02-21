@@ -14,19 +14,31 @@
         <div class="div-main-pg2">
             <form action="" class="form-pg2">
                 <legend>Olá @@</legend>
-                <fieldset>
-                    <label for="avaliacao">Como você avalia sua empresa?(0-10)</label>
-                    <input type="range" name="avaliacao" min="0" max="10">
-                    <label for="rotina">Descrica sua rotina</label>
-                    <textarea name="rotina" id=""rotina cols="30" rows="10" maxlength="200"></textarea>
-                    <label for="mudaProf">Mudaria de profissão?</label>
-                    <input type="radio" name="mudaProf"> Não
-                    <input type="radio" name="mudaProf"> Sim
-                    <input type="text" name="mudaProf" disabled> <!-- Habilitar no JS-->
+                <fieldset class="section-base">
+                    <div class="div-section-base">
+                        <label for="avaliacao">Como você avalia sua empresa?(0-10)</label>
+                        <input type="range" name="avaliacao" min="0" max="10">
+                        <label for="rotina">Descreva sua rotina</label>
+                        <textarea name="rotina" id=""rotina cols="30" rows="10" maxlength="200"></textarea>
+                        
+                            <legend>Mudaria de Profissão?</legend>
+                            <div>
+                                <input type="radio" name="mudaProf" id="radio-nao" value="nao">
+                                <label for="radio-nao">Não</label>
+                            </div>    
+                            <div>
+                                <input type="radio" name="mudaProf" id="radio-sim" value="sim">
+                                <label for="radio-sim">Sim</label>
+                            </div>
+                           <div id="input-text-mudaProf">
+                                <label for="mudaProf">Para qual ?</label>
+                                <input  type="text" name="mudaProf" disabled><!-- Habilitar no JS-->
+                           </div>
+                    </div> 
                 </fieldset>
-                <fieldset class=" section-bottom botoes">
-                    <input class="botao"type="button" value="Voltar">
-                    <input class="botao"type="button" value="Concluir">
+                <fieldset class="section-bottom botoes">
+                    <input class="botao" type="button" value="Voltar">
+                    <input class="botao" type="submit" value="Concluir">
                 </fieldset>
             </form>
             <div>
