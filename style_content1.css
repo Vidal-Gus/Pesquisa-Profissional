@@ -1,12 +1,11 @@
-fieldset{
-    border: none;
-}
+/*fieldset{
+    border: none; 
+}*/
 main h1{
     text-align: center;
 }
 
 form{
-    display: flex;
     display: block;
 }
 
@@ -90,4 +89,13 @@ h3{
     transition: .5s;
     background-color: #60D5F5;
     cursor: pointer;
+}
+
+
+/* ALTERAÇÕES PARA PG 2*/
+.div-main-pg2{
+    display: flex;
+}
+.form-pg2{
+    width: 450px;
 }
