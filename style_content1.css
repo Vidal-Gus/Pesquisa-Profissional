@@ -1,6 +1,6 @@
-/*fieldset{
+fieldset{
     border: none; 
-}*/
+}
 main h1{
     text-align: center;
 }
@@ -140,4 +140,31 @@ margin-bottom: 15px;
 
 #input-text-mudaProf input{
     width: 220px;
+}
+
+form legend{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.carrosel{
+    margin-top: 25px;
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    width: 440px;
+    height: 400px;
+    border-radius: 10px;
+}
+.container-carrosel{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+    width: 450px;
+    height: 450px;
+}
+
+img{
+    object-fit: cover;
+    width: 450px;
+    height: 450px;
 }
