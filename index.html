@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_base.css">
     <link rel="stylesheet" href="style_content1.css">
-    <script src="scripts.js"></script>
     <title>Pesquisa Profissional</title>
 </head>
 <body>
@@ -16,34 +15,36 @@
             <fieldset class="section-base">
                     <div>
                         <label for="name">Nome:</label>
-                        <input type="text" name="name" id="name">
+                        <input type="text" name="name" id="name" value="" required>
                         <label for="telefone">Telefone:</label>
                         <input type="number" name="telefone" id="telefone">
                     </div>
                     <div>
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" value="" required>
                         <label for="profissao">Profissão</label>
-                        <input type="text" name="profissao" id="profissao">
+                        <input type="text" name="profissao" id="profissao" required>
                     </div>
             </fieldset>
 
             <fieldset class="section-bottom">
                 <div>
                     <label for="resumo_perfil">Resumo de perfil:</label>
-                    <textarea name="resumo_perfil" id="resumo_perfil" cols="30" rows="10"></textarea>
+                    <textarea name="resumo_perfil" id="resumo_perfil" cols="30" rows="10" maxlength="200"></textarea>
                 </div>
                 <div class="div-avisos">
                     <h3>AVISO</h3>
                     <p class="avisos">Formulário feito para fins de estudo</p>
                     <div class="botoes">
                         <input class="botao" type="reset" value="Resetar">
-                        <input class="botao" type="submit" value="Avançar">
+                        <input class="botao" type="submit" value="Avançar" onclick="pegandoDados()">
                     </div>
                 </div>
             </fieldset>
         </form>
     </main>
     <p> &#169; Gustavo Vidal</p>
+
+    <script src="index.js"></script>
 </body>
 </html>
