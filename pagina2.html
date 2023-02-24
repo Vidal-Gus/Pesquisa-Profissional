@@ -13,14 +13,14 @@
         
         <h1>PESQUISA PROFISSIONAL</h1>
         <div class="div-main-pg2">
-            <form action="" class="form-pg2">
+            <form action="index.html" class="form-pg2">
                 <legend id="legend-nome">Olá @@</legend>
                 <fieldset class="section-base">
                     <div class="div-section-base">
                         <label for="avaliacao">Como você avalia sua empresa?(0-10)</label>
-                        <input type="range" name="avaliacao" min="0" max="10">
+                        <input type="range" name="avaliacao" id="avaliacao" min="0" max="10">
                         <label for="rotina">Descreva sua rotina</label>
-                        <textarea name="rotina" id=""rotina cols="30" rows="10" maxlength="200"></textarea>
+                        <textarea name="rotina" id="rotina" cols="30" rows="10" maxlength="200"></textarea>
                         
                             <legend>Mudaria de Profissão?</legend>
                             <div>
@@ -38,8 +38,8 @@
                     </div> 
                 </fieldset>
                 <fieldset class="section-bottom botoes">
-                    <a href="/index.html"><input class="botao" type="button" value="Voltar"></a>
-                    <input class="botao" type="submit" value="Concluir">
+                    <input class="botao" type="button" value="Voltar" onclick="history.go(-1)">
+                    <input class="botao" type="submit" id="botao-submit" value="Concluir">
                 </fieldset>
             </form>
             <div class="carrosel">
