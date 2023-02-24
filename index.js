@@ -1,17 +1,29 @@
-const name = document.querySelector("#name");
-const email = document.querySelector("#email");
-const telefone = document.querySelector("#telefone");
-const profissao = document.querySelector("#profissao");
 
+const form1 = document.querySelector('#form1');
 
 
 function pegandoDados(){
-    console.log(email.value);
+    var dados = JSON.stringify({
+    name : document.querySelector("#name").value,
+    email : document.querySelector("#email").value,
+    telefone : document.querySelector("#telefone").value,
+    profissao : document.querySelector("#profissao").value
+});
+
+    localStorage.setItem("storage", JSON.stringify(dados));
+    window.alert('dados adicionados');
+    return true;
 }
 
 function colocarDados(){
-    let legend = document.querySelector('#legend-nome');
-    console.log(legend);
-    console.log(email.value);
-    legend.innerHTML = `Olá ${email}`;
+   var registro = localStorage.getItem("storage");
+   var parse = JSON.parse(registro);
+   var obj = JSON.parse(parse);
+
+   console.log(obj.name);
+   console.log(obj.email);
+
+   let legend = document.querySelector("#legend-nome");
+   legend.innerHTML = `Olá ${obj.name}`
 }
+
