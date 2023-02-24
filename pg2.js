@@ -61,8 +61,5 @@ botaoSubmit.addEventListener('click', pegandoDados);
 });
 
     localStorage.setItem("storage", JSON.stringify(dados));
-    window.alert('dados adicionados');
-
-    console.log(localStorage)
     return true;
 }
