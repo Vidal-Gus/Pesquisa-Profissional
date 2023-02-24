@@ -168,3 +168,22 @@ img{
     width: 450px;
     height: 450px;
 }
+
+.semi-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.agradecer{
+    align-items: center;
+    width: 400px;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.agradecer:hover{
+    transition: .4s;
+    background-color: #A88731;
+}
