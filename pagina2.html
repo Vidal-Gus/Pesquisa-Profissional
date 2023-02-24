@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style_content1.css">
     <title>Pesquisa Profissinal</title>
 </head>
-<body onload="colocarDados()">
+<body  onload="colocarDados()">
     <main>
         
         <h1>PESQUISA PROFISSIONAL</h1>
@@ -24,16 +24,16 @@
                         
                             <legend>Mudaria de Profissão?</legend>
                             <div>
-                                <input type="radio" name="mudaProf" id="radio-nao" value="nao">
+                                <input type="radio" name="mudaProf" id="radio-nao" value="radioNao">
                                 <label for="radio-nao">Não</label>
                             </div>    
                             <div>
-                                <input type="radio" name="mudaProf" id="radio-sim" value="sim">
+                                <input type="radio" name="mudaProf" id="radio-sim" value="radioSim">
                                 <label for="radio-sim">Sim</label>
                             </div>
                            <div id="input-text-mudaProf">
                                 <label for="mudaProf">Para qual ?</label>
-                                <input  type="text" name="mudaProf" disabled><!-- Habilitar no JS-->
+                                <input  type="text" name="mudaProf" id="descMudaProf" disabled><!-- Habilitar no JS-->
                            </div>
                     </div> 
                 </fieldset>
@@ -55,6 +55,6 @@
         </div>
     </main>
     <script src="carrosel.js"></script>
-    <script src="index.js"></script>
+    <script src="pg2.js"></script>
 </body>
 </html>

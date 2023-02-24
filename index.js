@@ -1,5 +1,6 @@
 
-const form1 = document.querySelector('#form1');
+const botaoSubmit = document.getElementById('botao-submit');
+botaoSubmit.addEventListener('click', pegandoDados);
 
 
 function pegandoDados(){
@@ -14,16 +15,3 @@ function pegandoDados(){
     window.alert('dados adicionados');
     return true;
 }
-
-function colocarDados(){
-   var registro = localStorage.getItem("storage");
-   var parse = JSON.parse(registro);
-   var obj = JSON.parse(parse);
-
-   console.log(obj.name);
-   console.log(obj.email);
-
-   let legend = document.querySelector("#legend-nome");
-   legend.innerHTML = `Olá ${obj.name}`
-}
-
